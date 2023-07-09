@@ -37,15 +37,15 @@ const Chart = () => {
     labels: stockInfo.days,
     datasets: [
       {
-        label: "Stock Price v/s Days",
+        label: "Stock Price",
         data: stockInfo.predicted_prices,
         backgroundColor: "#130791",
-        borderColor: ["#130791"],
-        pointBorderColor: "green",
+        borderColor: "#11fa11",
+        pointBorderColor: "white",
         tension: 0,
         fill: false,
         pointHoverRadius: 7.5,
-        pointBackgroundColor: "green",
+        pointBackgroundColor: "white",
       },
     ],
   };

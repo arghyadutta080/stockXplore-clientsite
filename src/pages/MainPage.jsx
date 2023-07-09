@@ -40,7 +40,7 @@ const Main = () => {
           </h1>
         </div>
       
-          <div className="text-white rounded-lg flex flex-col items-center   bg-[rgba(22,21,21,0.28)] justify-between border border-white md:p-5 hover:scale-105 ease-in-out duration-100 2xl:w-[1200px] 2xl:h-[700px] min-[360px]:w-[340px]  min-[390px]:w-[360px] min-[400px]:w-[390px] min-[500px]:w-[520px] md:w-[710px] md:h-[500px] min-[800px]:w-[760px] min-[900px]:w-[850px] lg:w-[970px] lg:h-[700px] min-[1080px]:w-[900px] min-[1080px]:h-[550px] ">
+          <div className="text-white rounded-lg flex flex-col items-center   bg-[#01112b] justify-between border border-white md:p-5 hover:scale-105 ease-in-out duration-100 2xl:w-[1200px] 2xl:h-[700px] min-[360px]:w-[340px]  min-[390px]:w-[360px] min-[400px]:w-[390px] min-[500px]:w-[520px] md:w-[710px] md:h-[500px] min-[800px]:w-[760px] min-[900px]:w-[850px] lg:w-[970px] lg:h-[700px] min-[1080px]:w-[900px] min-[1080px]:h-[550px] ">
           <Chart />
           <h1 className="text-center text-xl md:text-2xl font-bold pb-5">
             Stock Price Predicted on Upcoming 30 Days

@@ -36,7 +36,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="p-4">
-            <Link to="/">
+            <Link to="/guide">
               <h1 className="hover:border-b border-spacing-4 hover:border-b-white">
                 Guide
               </h1>
