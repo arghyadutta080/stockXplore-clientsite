@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import StockContext from "../contexts/StockContext";
+import StockContext from "../../contexts/StockContext";
 
 import { BsFillKeyFill , BsFillTelephoneFill} from "react-icons/bs";
 
