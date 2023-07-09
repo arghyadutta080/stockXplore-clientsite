@@ -5,7 +5,7 @@ import StockData from '../data/StockData';
 
 const StockState = (props) => {
     const [modal , setModal] = useState(false)
-    
+    const [user , setUser]=useState(false);
     const [stockInfo, setStockInfo] = useState(StockData);
     const handleModal = () => {
       setModal(true) ;
@@ -22,7 +22,7 @@ const StockState = (props) => {
       
     }
   return (
-    <StockContext.Provider value={{modal , handleModal , stockInfo , setStockInfo , handleClose}}>
+    <StockContext.Provider value={{modal , handleModal , user , setUser , stockInfo , setStockInfo , handleClose}}>
         {props.children}
     </StockContext.Provider>
   )

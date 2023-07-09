@@ -4,9 +4,14 @@ import StockContext from "../../contexts/StockContext";
 import { BsFillKeyFill , BsFillTelephoneFill} from "react-icons/bs";
 
 const Login = ({setSign}) => {
+
+  
   const s = useContext(StockContext);
 
   const handleClose = s.handleClose;
+  const user = s.user ;
+  const setUser = s.setUser ;
+
   const signUp = ()=>{
     setSign(false);
   }
@@ -14,6 +19,13 @@ const Login = ({setSign}) => {
   const [phone , setPhone] = useState("");
   const [pass , setPass] = useState("");
   
+
+  const ValidUser = ()=>{
+    if(phone==="8337045160" && pass==="bag123"){
+       setUser(true);
+    }
+  };
+
   return (
     <>
      <div
@@ -66,7 +78,7 @@ const Login = ({setSign}) => {
             </div>
 
             <div className="mt-5">
-              <button className="border border-blue-500 rounded-lg  text-center p-2 font-semibold bg-blue-600 hover:bg-[#0d07b0]  w-[15vh] 2xl:text-xl min-[800px]:text-2xl lg:text-lg min-[1080px]:text-2xl">
+              <button onClick={ValidUser} className="border border-blue-500 rounded-lg  text-center p-2 font-semibold bg-blue-600 hover:bg-[#0d07b0]  w-[15vh] 2xl:text-xl min-[800px]:text-2xl lg:text-lg min-[1080px]:text-2xl">
                 Login
               </button>
             </div>

@@ -3,10 +3,12 @@ import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import StockContext from "../contexts/StockContext";
 import logo from "../assets/photos/StockXplore.png";
+import Confirm from "../components/authentication/Confirm";
 import { TypeAnimation } from "react-type-animation";
 const Navbar = () => {
   const s = useContext(StockContext);
   const handleModal = s.handleModal ;
+  const user = s.user ;
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
@@ -44,21 +46,9 @@ const Navbar = () => {
           </li>
           <li className="p-4">
             
-              <button onClick={handleModal} className="border p-4 font-bold rounded-lg hover:bg-white hover:text-black hover:bg-opacity-70">
-              <TypeAnimation
-      sequence={[
-        
-        'Sign Up',
-        1000, 
-        'Sign In',
-        1000,
-      ]}
-      wrapper="span"
-      speed={10}
-      style={{  display: 'inline-block' }}
-      repeat={Infinity}
-    />
-              </button>
+              {user?<Confirm />:<button onClick={handleModal} className="border p-4 font-bold rounded-lg hover:bg-white hover:text-black hover:bg-opacity-70">
+              Sign Up/Sign In
+              </button>}
             
           </li>
         </ul>
@@ -81,7 +71,7 @@ const Navbar = () => {
           <Link to="/about">
             <li className="p-4 min-[1080px]:p-10 border-b border-gray-600">About Us</li>
           </Link>
-          <li className="p-4 min-[1080px]:p-10 border-b border-gray-600">Guide</li>
+          <Link to='/guide'><li className="p-4 min-[1080px]:p-10 border-b border-gray-600">Guide</li></Link>
 
           <li className="p-4 min-[1080px]:p-10">
             <button
