@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-
 import { FaBars, FaTimes } from "react-icons/fa";
 import StockContext from "../contexts/StockContext";
 import logo from "../assets/photos/StockXplore.png";
@@ -94,6 +93,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      {}
     </>
   );
 };
