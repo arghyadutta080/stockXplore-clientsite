@@ -63,7 +63,7 @@ const Navbar = () => {
           }
         >
           <h1 className="w-full min-[280px]:text-3xl min-[1080px]:text-7xl  font-bold text-white m-4 pb-4 min-[1080px]:pb-10 mt-5">
-            LOGO
+          <img src={logo} className="h-[100px] brightness-200 opacity-100 mt-2 w-[120px]" alt="" />
           </h1>
           <Link to="/">
             <li className="p-4 min-[1080px]:p-10 border-b border-gray-600">Home</li>

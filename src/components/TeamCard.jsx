@@ -2,6 +2,7 @@ import React from 'react'
 
 import {BsLinkedin , BsGithub} from "react-icons/bs" ;
 import devfolio from '../assets/photos/Devfolio.png';
+import { Link } from 'react-router-dom';
 
 const TeamCard = (props) => {
   return (
@@ -14,9 +15,9 @@ const TeamCard = (props) => {
         <h1 className='text-2xl font-bold text-white'>{props.name}</h1>
         <h2 className='text-xl font-semibold text-gray-300'>{props.role}</h2>
         <div className='flex flex-row items-center content-center justify-evenly space-x-4 pt-6'>
-          <BsLinkedin size={25} style={{color:'#0742b0'}} className='hover:scale-110 cursor-pointer bg-white rounded-lg' />
-          <BsGithub size={25} className='hover:scale-110 cursor-pointer text-white' />
-          <img src={devfolio} alt="" className='h-[25px] w-[25px] hover:scale-110 cursor-pointer'/>
+          <Link to={props.linkedin}><BsLinkedin size={25} style={{color:'#0742b0'}} className='hover:scale-110 cursor-pointer bg-white rounded-lg' /></Link>
+          <Link to={props.github}><BsGithub size={25} className='hover:scale-110 cursor-pointer text-white' /></Link>
+          <Link to={props.devfolio}><img src={devfolio} alt="" className='h-[25px] w-[25px] hover:scale-110 cursor-pointer'/></Link>
         </div>
      </div>
     </div>

@@ -12,7 +12,7 @@ const Video = () => {
    
    
   return (
-    <div className='absolute top-0 w-[100%] h-[100%] overflow-y-hidden'>
+    <div className='absolute top-0 w-[100%] h-[100vh] '>
       <video src={BgVideo} autoPlay muted loop className='w-[100%] h-[100%] object-cover z-[-1]' />
      <div className='flex flex-col w-[100%]  absolute object-contain h-[100%] top-[40vh] text-center items-center content-center m-auto'>
         <h1 className=' font-bold  text-white text-5xl'>

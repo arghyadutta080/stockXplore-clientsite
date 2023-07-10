@@ -1,9 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState , useContext } from 'react'
 import Symbols from '../data/SymbolData'
 import { FaSearch } from 'react-icons/fa'
+import StockContext from '../contexts/StockContext';
+import Modal from '../components/authentication/Modal';
+
 
 const GuidePage = () => {
-
+  const s = useContext(StockContext);
+  const modal = s.modal;
     const [search  , setSearch] = useState('');
   return (
     <>
@@ -27,12 +31,12 @@ const GuidePage = () => {
         <div className='relative top-[30vh]'>
         <table className="text-white mt-5 shadow-2xl bg-[rgba(22,21,21,0.28)] border border-spacing-2 min-[280px]:w-[250px] min-[360px]:w-[340px] md:w-[360px] md:font-semibold min-[900px]:w-[380px]  min-[900px]:text-xl lg:w-[600px] min-[1080px]:text-3xl   xl:text-base 2xl:w-[750px] border-seperate border-slate-500">
         <caption class="caption-top text-lg font-bold pb-1 min-[900px]:text-xl min-[1080px]:text-3xl xl:text-xl mb-2">
-          Table
+          Table : Company Name & Stock Symbols
         </caption>
         <thead>
           <tr className="bg-slate-700 hover:">
             <th className="border border-slate-600 py-4">Company Name</th>
-            <th className="border border-slate-600">Company Symbol</th>
+            <th className="border border-slate-600">Stock Symbol</th>
           </tr>
         </thead>
         <tbody>
@@ -51,6 +55,7 @@ const GuidePage = () => {
       </table>
         </div>
     
+        {modal ? <Modal /> : null}
     </div>
     </>
   )

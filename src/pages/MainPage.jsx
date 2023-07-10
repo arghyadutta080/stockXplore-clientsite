@@ -6,7 +6,7 @@ import StockContext from "../contexts/StockContext";
 import Table from "../components/Main/Table";
 import Modal from "../components/authentication/Modal";
 
-const Main = () => {
+const MainPage = () => {
   const s = useContext(StockContext);
   const modal = s.modal;
 
@@ -28,6 +28,7 @@ const Main = () => {
               <FaSearch  className="text-white min-[360px]:h-[25px] min-[360px]:w-[25px]" />
             </button>
           </div>
+          {/* <input type="checkbox" className='' checked  /> */}
         </div>
         <div className="flex flex-col 2xl:flex-row  justify-center items-center 2xl:items-start gap-8 md:gap-14 min-[900px]:gap-20 min-[1080px]:gap-[6vh] xl:gap-9 xl:space-x-10 absolute 2xl:top-[35vh] 2xl:px-[16vh] min-[280px]:top-[35vh] min-[360px]:top-[32vh] min-[360px]:px-[0.90rem] min-[390px]:px-[1.5vh]  min-[400px]:px-[1vh] md:px-7 min-[900px]:top-[28vh] lg:top-[48vh]  min-[1080px]:px-20 min-[1080px]:top-[25vh] xl:top-[40vh] xl:px-[20vh]">
        <div className="flex flex-col">
@@ -59,4 +60,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default MainPage;

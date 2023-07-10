@@ -7,7 +7,7 @@
         role : "Backend Developer"  ,
         linkedin : "https://www.linkedin.com/in/arghya-dutta-developer/" ,
         github : "https://github.com/arghyadutta080" ,
-        devfolio :  "" ,
+        devfolio :  "https://devfolio.co/@arghya080" ,
     } ,
     {
         id : 2 ,
@@ -30,7 +30,7 @@
     { 
         id:4,
         name : "Shreya Sarkar" ,
-        photo : 'https://media.licdn.com/dms/image/C5603AQFVkqb0sYuaxQ/profile-displayphoto-shrink_800_800/0/1662895040702?e=1694044800&v=beta&t=VX_OlkbQhFQzGM4k0z1swUgFur2jy-HoYEYNj3Cn7t0' ,
+        photo : 'https://media.licdn.com/dms/image/D5603AQHkG9Kkp2jZqQ/profile-displayphoto-shrink_400_400/0/1688923892818?e=1694649600&v=beta&t=EmZ6eN-_P-13ZVSWP5H52R-IHjksfasFTZZj-tjFCi4' ,
         role : "UI/UX Developer"  ,
         linkedin : "https://www.linkedin.com/in/shreya-sarkar-2ab00b250/" ,
         github : "https://github.com/ShreyaSarkar10" ,

@@ -198,7 +198,45 @@ const Symbols = [
     {
       "name": "Ford Motor Company",
       "symbol": "F"
-    }
+    },
+    {
+      "name": "Tesla, Inc.",
+      "symbol": "TSLA"
+    },
+    {
+      "name": "Alibaba Group Holding Limited",
+      "symbol": "BABA"
+    },
+    {
+      "name": "Intel Corporation",
+      "symbol": "INTC"
+    },
+    {
+      "name": "Salesforce.com, Inc.",
+      "symbol": "CRM"
+    },
+    {
+      "name": "PayPal Holdings, Inc.",
+      "symbol": "PYPL"
+    },
+    {
+      "name": "Starbucks Corporation",
+      "symbol": "SBUX"
+    },
+    {
+      "name": "The Boeing Company",
+      "symbol": "BA"
+    },
+    
+    {
+      "name": "Nike, Inc.",
+      "symbol": "NKE"
+    },
+    {
+      "name": "Costco Wholesale Corporation",
+      "symbol": "COST"
+    },
+
   ]
 
   export default Symbols ;
