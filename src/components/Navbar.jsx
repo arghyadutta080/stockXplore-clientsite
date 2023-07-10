@@ -44,13 +44,13 @@ const Navbar = () => {
               </h1>
             </Link>
           </li>
-          <li className="p-4">
+          {/* <li className="p-4">
             
               {user?<Confirm />:<button onClick={handleModal} className="border p-4 font-bold rounded-lg hover:bg-white hover:text-black hover:bg-opacity-70">
               Sign Up/Sign In
               </button>}
             
-          </li>
+          </li> */}
         </ul>
         <div onClick={handleNav} className="block xl:hidden">
           {!nav ? <FaBars className="h-[25px] w-[25px] min-[1080px]:h-[40px] min-[1080px]:w-[40px] xl:h-[25px] xl:w-[25px]" /> : <FaTimes className="h-[25px] w-[25px] min-[1080px]:h-[40px] min-[1080px]:w-[40px] xl:h-[25px] xl:w-[25px]" />}
@@ -73,14 +73,14 @@ const Navbar = () => {
           </Link>
           <Link to='/guide'><li className="p-4 min-[1080px]:p-10 border-b border-gray-600">Guide</li></Link>
 
-          <li className="p-4 min-[1080px]:p-10">
+          {/* <li className="p-4 min-[1080px]:p-10">
             <button
               onClick={handleModal}
               className="text-white md:text-2xl min-[1080px]:p-10 min-[1080px]:text-5xl p-2 md:p-4 border my-4 font-semibold rounded-md hover:bg-white hover:text-black hover:bg-opacity-50"
             >
               Sign Up/Sign In
             </button>
-          </li>
+          </li> */}
         </ul>
       </div>
       {}

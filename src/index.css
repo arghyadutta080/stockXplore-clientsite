@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  background-color: #010a17 ;
+body {
+  background-color: #010a17;
 }
-/* ::-webkit-scrollbar {
-  width: 0.5em;
+
+::-webkit-scrollbar {
+  width: 0em;
 }
 
 ::-webkit-scrollbar-track {
@@ -15,4 +16,4 @@ body{
 
 ::-webkit-scrollbar-thumb {
   background-color: #888;
-} */
+}

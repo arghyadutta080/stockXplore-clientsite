@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Line } from "react-chartjs-2";
-import StockData from "../../data/StockData";
+
 import {
   Chart as ChartJS,
   LineElement,
@@ -21,7 +21,7 @@ ChartJS.register(
   Legend,
   Colors,
   Tooltip,
-  
+
 );
 
 ChartJS.defaults.color = "#fff";
@@ -36,19 +36,9 @@ const Chart = () => {
   const data = {
     labels: stockInfo.days,
     datasets: [
+
       {
-        label: "Previous 6 Months Stock Price",
-        data: stockInfo.predicted_prices,
-        backgroundColor: "#130791",
-        borderColor: "#11fa11",
-        pointBorderColor: "white",
-        tension: 0,
-        fill: false,
-        pointHoverRadius: 7.5,
-        pointBackgroundColor: "white",
-      },
-      {
-        label: "Upcoming 30 Days Stock Price",
+        label: " Stock Price",
         data: stockInfo.predicted_prices,
         backgroundColor: "#14f011",
         borderColor: "#11fa11",
