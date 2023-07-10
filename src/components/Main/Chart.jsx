@@ -37,7 +37,7 @@ const Chart = () => {
     labels: stockInfo.days,
     datasets: [
       {
-        label: "Stock Price",
+        label: "Previous 6 Months Stock Price",
         data: stockInfo.predicted_prices,
         backgroundColor: "#130791",
         borderColor: "#11fa11",
@@ -47,6 +47,18 @@ const Chart = () => {
         pointHoverRadius: 7.5,
         pointBackgroundColor: "white",
       },
+      {
+        label: "Upcoming 30 Days Stock Price",
+        data: stockInfo.predicted_prices,
+        backgroundColor: "#14f011",
+        borderColor: "#11fa11",
+        pointBorderColor: "white",
+        tension: 0,
+        fill: false,
+        pointHoverRadius: 7.5,
+        pointBackgroundColor: "white",
+      },
+
     ],
   };
 
