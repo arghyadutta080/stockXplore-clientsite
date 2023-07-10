@@ -9,7 +9,7 @@ const Table = () => {
     <div>
       
       <table className="text-white mt-5 shadow-2xl bg-[rgba(22,21,21,0.28)] border border-spacing-2 min-[280px]:w-[250px] min-[360px]:w-[340px] md:w-[360px] md:font-semibold min-[900px]:w-[380px]  min-[900px]:text-xl lg:w-[600px] min-[1080px]:text-3xl   xl:text-base 2xl:w-[400px] border-seperate border-slate-500">
-        <caption class="caption-top text-lg font-bold pb-1 min-[900px]:text-xl min-[1080px]:text-3xl xl:text-xl mb-2">
+        <caption className="caption-top text-lg font-bold pb-1 min-[900px]:text-xl min-[1080px]:text-3xl xl:text-xl mb-2">
           Table : Days & Predicted Stock-Prices
         </caption>
         <thead>

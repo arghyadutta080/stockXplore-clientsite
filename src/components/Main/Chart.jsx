@@ -29,9 +29,9 @@ ChartJS.defaults.borderColor = "#fff";
 ChartJS.defaults.scales.category.zeroLineColor = "#fff";
 
 const Chart = () => {
-  const s = useContext(StockContext);
+  const context = useContext(StockContext);
 
-  const stockInfo = s.stockInfo;
+  const stockInfo = context.stockInfo;
 
   const data = {
     labels: stockInfo.days,
@@ -72,8 +72,8 @@ const Chart = () => {
         ticks: {
           maxTicksLimit: 100,
         },
-        max: Math.max(...StockData.predicted_prices),
-        min: Math.min(...StockData.predicted_prices),
+        max: Math.max(...stockInfo.predicted_prices),
+        min: Math.min(...stockInfo.predicted_prices),
         grid: {
           display: false,
           color: "rgba(0,255,0,0.9)",
