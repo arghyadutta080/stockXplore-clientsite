@@ -15,9 +15,9 @@
 
 ## <h3 align='center'> Sample UI of our stockXplore Web-App </h3>
 <p align='center'>
-<img src="UI/Screenshot (968).png" alt="Screenshot of Home Screen" width="500">
-<img src="UI/Screenshot (969).png" alt="Screenshot of Food items Screen" width="500">
-<img src="UI/Screenshot (972).png" alt="Screenshot of Delivery Screen" width="500">
+<img src="UI/Screenshot (968).png" alt="Screenshot of Home Screen" width="450">
+<img src="UI/Screenshot (969).png" alt="Screenshot of Food items Screen" width="450">
+<img src="UI/Screenshot (972).png" alt="Screenshot of Delivery Screen" width="450">
 <p>
 
 ## Installation
